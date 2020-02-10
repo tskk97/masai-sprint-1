@@ -1,0 +1,406 @@
+body{
+    background-color: #e7e5e5;
+}
+
+/* Top Banner */
+#flexbox1{
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 5px;
+    flex-wrap: nowrap;
+}
+#flexbox1 .icon{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+#flexbox1 .page{
+    padding: 10px;
+    margin: 30px 10px 10px 10px;
+    border-radius: 5px;
+}
+.icon img{
+    height: 60px;
+}
+.page a{
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Ubuntu;
+    text-decoration: none;
+}
+.page a:hover{
+    background-color: #141414;
+    padding: 11px 10px;
+}
+
+/* Index - Home */
+#gridbox1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 20px 150px 350px 100px 550px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.heading1{
+    font-size: 4.5vw;
+    font-family: 'Sriracha', cursive;
+    padding: 20px;
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+.publish{
+    font-size: 1vw;
+    font-family: Ubuntu;
+    padding: 20px 20px 20px 40px;
+    margin-bottom: 20px;
+    grid-area: 2 / 1 / span 1 / span 3;
+    color: #9b9b9b;
+}
+.para1{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 60px 20px 0px 20px;
+    color: black;
+    grid-area: 3 / 1 / span 1 / span 2;
+    text-align: justify;
+}
+.para1::first-letter{
+    font-size: 40px;
+}
+.img1 img{
+    height: 580px;
+    padding: 20px;
+}
+.img1{
+    grid-area: 1 / 3 / span 4 / span 1;
+}
+@media (max-width: 1270px){
+    .heading1{
+        font-size: 6vw;
+        grid-area: 1 / 1 / span 1 / span 3;
+    }
+    .publish{
+        font-size: 1.5vw;
+        grid-area: 2 / 1 / span 1 / span 3;
+    }
+    .img1{
+        grid-area: 2 / 3 / span 1 / span 1;
+    }
+    #gridbox1{
+        grid-template-rows: 100px 20px 200px 500px;
+    }
+    .para1{
+        padding: 40px 20px 0px 20px;
+    }
+}
+.para2{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 40px 20px 20px 20px;
+    color: black;
+    grid-area: 4 / 1 / span 1 / span 2;
+    text-align: justify;
+}
+#gridbox1 > .para2::first-letter{
+    font-size: 40px;
+}
+
+/* index - Main */
+.heading2{
+    font-size: 3.5vw;
+    font-family: 'Sriracha', cursive;
+    padding: 20px;
+    grid-area: 5 / 1 / span 1 / span 2;
+}
+.img2 img{
+    height: 450px;
+    padding: 40px 20px 20px 20px;
+}
+.img2{
+    grid-area: 6 / 1 / span 1 / span 1;
+}
+.para3{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 40px 20px 20px 20px;
+    color: black;
+    grid-area: 6 / 2 / span 1 / span 2;
+    text-align: justify;
+}
+#gridbox1 .type1{
+    font-size: 25px;
+}
+
+/* Bottom Banner */
+#gridbox2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.information{
+    grid-area: 1 / 1 / span 1 / span 1;
+    font-size: 20px;
+    font-family: Ubuntu;
+    color: gray;
+    text-align: left;
+    padding: 40px 20px;
+}
+.social{
+    grid-area: 1 / 2 / span 1 / span 1;
+    text-align: right;
+}
+.social img{
+    height: 100px;
+}
+
+/* Nutrition - Main */
+#gridbox3{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 20px 150px 170px 160px 120px 240px 140px 140px 170px 150px 150px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+#gridbox3 > .heading1{
+    font-size: 4.5vw;
+    font-family: 'Sriracha', cursive;
+    padding: 20px;
+    grid-area: 1 / 1 / span 1 / span 3;  
+}
+#gridbox3 > .publish{
+    font-size: 1vw;
+    font-family: Ubuntu;
+    padding: 20px 20px 20px 40px;
+    margin-bottom: 20px;
+    grid-area: 2 / 1 / span 1 / span 3;
+    color: #9b9b9b;
+}
+#gridbox3 > .heading2{
+    grid-area: 3 / 1 / span 1 / span 3;
+    font-size: 3.5vw;
+    font-family: 'Sriracha', cursive;
+    padding: 60px 20px 20px 20px;
+}
+#gridbox3 > .para1{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 40px 20px 0px 20px;
+    color: black;
+    grid-area: 4 / 1 / span 1 / span 3;
+    text-align: justify;
+}
+#gridbox3 > .para2{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 40px 20px 0px 20px;
+    color: black;
+    grid-area: 5 / 1 / span 1 / span 2;
+    text-align: justify;
+}
+#gridbox3 > .para3{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 0px 20px 20px 20px;
+    color: black;
+    grid-area: 6 / 1 / span 1 / span 2;
+    text-align: justify;
+}
+#gridbox3 > .para4{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 0px 20px 20px 20px;
+    color: black;
+    grid-area: 7 / 1 / span 1 / span 2;
+    text-align: justify;
+}
+#gridbox3 > .para5{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 0px 20px 20px 20px;
+    color: black;
+    grid-area: 8 / 1 / span 1 / span 2;
+    text-align: justify;
+}
+#gridbox3 > .para6{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 0px 20px 20px 20px;
+    color: black;
+    grid-area: 9 / 1 / span 1 / span 2;
+    text-align: justify;
+}
+#gridbox3 > .para7{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 0px 20px 20px 20px;
+    color: black;
+    grid-area: 10 / 1 / span 1 / span 2;
+    text-align: justify;
+}
+#gridbox3 > .para8{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 0px 20px 20px 20px;
+    color: black;
+    grid-area: 11 / 1 / span 1 / span 2;
+    text-align: justify;
+}
+#gridbox3 > .para9{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 0px 20px 20px 20px;
+    color: black;
+    grid-area: 12 / 1 / span 1 / span 3;
+    text-align: justify;
+}
+#gridbox3 > .para9::first-letter{
+    font-size: 40px;
+}
+#grigbox3 .type2{
+    font-size: 35px;
+}
+
+/* Benefits - Main */
+#gridbox4{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 20px 150px 400px 370px 400px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+#gridbox4 > .heading1{
+    font-size: 4.5vw;
+    font-family: 'Sriracha', cursive;
+    padding: 20px;
+    grid-area: 1 / 1 / span 1 / span 3;  
+}
+#gridbox4 > .publish{
+    font-size: 1vw;
+    font-family: Ubuntu;
+    padding: 20px 20px 20px 40px;
+    margin-bottom: 20px;
+    grid-area: 2 / 1 / span 1 / span 3;
+    color: #9b9b9b;
+}
+#gridbox4 > .heading2{
+    grid-area: 3 / 1 / span 1 / span 3;
+    font-size: 3.5vw;
+    font-family: 'Sriracha', cursive;
+    padding: 60px 20px 20px 20px;
+}
+#gridbox4 > .para1{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 40px 20px 0px 20px;
+    color: black;
+    grid-area: 4 / 1 / span 1 / span 2;
+    text-align: justify;
+}
+#gridbox4 > .para2{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 40px 20px 0px 20px;
+    color: black;
+    grid-area: 5 / 1 / span 1 / span 2;
+    text-align: justify;
+}
+#gridbox4 > .para3{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 0px 20px 20px 20px;
+    color: black;
+    grid-area: 6 / 1 / span 1 / span 2;
+    text-align: justify;
+}
+#gridbox4 > .para1::first-letter{
+    font-size: 40px;
+}
+#gridbox4 > .para2::first-letter{
+    font-size: 40px;
+}
+#gridbox4 > .para3::first-letter{
+    font-size: 40px;
+}
+#grigbox4 .type3{
+    font-size: 25px;
+}
+#gridbox4 > .img5 img{
+    height: 250px;
+    padding: 110px 20px 20px 20px;
+}
+#gridbox4 > .img5{
+    grid-area: 4 / 3 / span 1 / span 1;
+}
+#gridbox4 > .img6 img{
+    height: 200px;
+    padding: 100px 20px 20px 20px;
+}
+#gridbox4 > .img6{
+    grid-area: 5 / 3 / span 1 / span 1;
+}
+#gridbox4 > .img7 img{
+    height: 260px;
+    padding: 60px 30px 20px 20px;
+}
+#gridbox4 > .img7{
+    grid-area: 6 / 3 / span 1 / span 1;
+}
+
+/* Events - Main */
+#gridbox5{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 150px 350px 350px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+#gridbox5 > .heading1{
+    font-size: 4.5vw;
+    font-family: 'Sriracha', cursive;
+    padding: 20px;
+    grid-area: 1 / 1 / span 1 / span 2;  
+}
+#gridbox5 > .para1{
+    font-family: 'Barlow', sans-serif;
+    font-size: 25px;
+    padding: 40px 20px 0px 20px;
+    color: black;
+    grid-area: 2 / 1 / span 1 / span 1;
+    text-align: justify;
+}
+#gridbox5 > .para2{
+    font-family: 'Barlow', sans-serif;
+    font-size: 25px;
+    padding: 40px 20px 0px 20px;
+    color: black;
+    grid-area: 3 / 1 / span 1 / span 1;
+    text-align: justify;
+}
+#gridbox5 > .img3 img{
+    height: 280px;
+    padding: 10px 20px 20px 20px;
+}
+#gridbox5 > .img3{
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+#gridbox5 > .img4 img{
+    height: 250px;
+    padding: 40px 20px 20px 20px;
+}
+#gridbox5 > .img4{
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+#gridbox5 > .para2::first-letter{
+    font-size: 40px;
+}
