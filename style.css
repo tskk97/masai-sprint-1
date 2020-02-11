@@ -11,7 +11,7 @@ body{
     border-radius: 5px;
     flex-wrap: nowrap;
 }
-#flexbox1 .icon{
+#flexbox1 .icon1{
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
@@ -21,8 +21,27 @@ body{
     margin: 30px 10px 10px 10px;
     border-radius: 5px;
 }
-.icon img{
+.icon1 img{
     height: 60px;
+}
+#flexbox1 .icon2{
+    padding: 24px 0px 10px 550px;
+    margin: 10px;
+    border-radius: 1px;
+}
+.icon2 img{
+    height: 30px;
+}
+.search{
+    padding: 31px 0px;
+}
+input{
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: lighter;
+    border: 3px solid #3a3a3a;
+    border-radius: 5px;
+    padding: 4px;
 }
 .page a{
     background-color: #3a3a3a;
